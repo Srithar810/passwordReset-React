@@ -4,7 +4,7 @@ import axios from "axios";
 import {  toast } from "react-toastify";
 import "react-toastify/ReactToastify.css";
 
-const Register = () => {
+const register = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -96,4 +96,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default register;

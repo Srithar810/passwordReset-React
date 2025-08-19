@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { jwtDecode } from "jwt-decode";
+import {jwtDecode} from "jwt-decode";
 
-const Login = ({ setToken }) => {
+const login = ({ setToken }) => {
   const [email, setEmail] = useState("test05@gmail.com");
   const [password, setPassword] = useState("12345");
   const [loading, setLoading] = useState(false);
@@ -15,10 +15,13 @@ const Login = ({ setToken }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("https://passwordresetflow-zu6g.onrender.com/api/auth/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://passwordresetflow-zu6g.onrender.com/api/auth/login",
+        {
+          email,
+          password,
+        }
+      );
 
       // Store the token
       const token = res.data.token;
@@ -101,4 +104,4 @@ const Login = ({ setToken }) => {
   );
 };
 
-export default Login;
+export default login;
