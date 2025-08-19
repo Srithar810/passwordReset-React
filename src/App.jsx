@@ -7,7 +7,6 @@ import Profile from "./Components/Profile";
 import { ToastContainer } from "react-toastify";
 import ForgotPassword from "./Components/forgotPassword";
 import ResetPassword from "./Components/resetPassword";
-// E:\MERN\FSD-WD-21\TASK\passwordReset-React\src\Components\Login.jsx
 
 const App = () => {
   const [token, setToken] = useState("");
