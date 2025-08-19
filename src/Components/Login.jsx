@@ -14,7 +14,6 @@ const Login = ({ setToken }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
     try {
       const res = await axios.post("https://passwordresetflow-zu6g.onrender.com/api/auth/login", {
         email,
