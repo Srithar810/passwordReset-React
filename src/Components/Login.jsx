@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {jwtDecode} from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
-const login = ({ setToken }) => {
+const Login = ({ setToken }) => {
   const [email, setEmail] = useState("test05@gmail.com");
   const [password, setPassword] = useState("12345");
   const [loading, setLoading] = useState(false);
@@ -104,4 +104,4 @@ const login = ({ setToken }) => {
   );
 };
 
-export default login;
+export default Login;

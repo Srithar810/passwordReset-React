@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Body from "./Components/Body";
-import Login from "./Components/login";
-import Register from "./Components/register";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 import Profile from "./Components/Profile";
 import { ToastContainer } from "react-toastify";
-import ForgotPassword from "./Components/forgotPassword";
-import ResetPassword from "./Components/resetPassword";
+import ForgotPassword from "./Components/ForgotPassword";
+import ResetPassword from "./Components/ResetPassword";
 
 const App = () => {
   const [token, setToken] = useState("");
