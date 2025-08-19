@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { jwtDecode } from "jwt-decode";
 
-const Login = ({ setToken }) => {
+const login = ({ setToken }) => {
   const [email, setEmail] = useState("test05@gmail.com");
   const [password, setPassword] = useState("12345");
   const [loading, setLoading] = useState(false);
@@ -104,4 +104,4 @@ const Login = ({ setToken }) => {
   );
 };
 
-export default Login;
+export default login;
