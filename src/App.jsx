@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Body from "./Components/Body";
-import Login from "./Components/login";
-import Register from "./Components/register";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 import Profile from "./Components/Profile";
 import { ToastContainer } from "react-toastify";
 import ForgotPassword from "./Components/ForgotPassword";
