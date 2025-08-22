@@ -8,7 +8,7 @@ const Body = () => {
   return (
     <div>
       <NavBar />
-      <Register></Register>
+      {/* <Register></Register> */}
       <Outlet />
       <Footer />
     </div>
