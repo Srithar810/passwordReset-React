@@ -3,12 +3,13 @@ import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Register from "./Register";
+import Login from "./Login";
 
 const Body = () => {
   return (
     <div>
       <NavBar />
-      {/* <Register></Register> */}
+      
       <Outlet />
       <Footer />
     </div>

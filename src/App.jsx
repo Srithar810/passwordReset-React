@@ -17,8 +17,8 @@ const App = () => {
       </div>
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" element={<Body />}>
-            <Route path="/register" element={<Register />} />
+          <Route element={<Body/>}>
+            <Route path="/" element={<Register />} />
             <Route path="/login" element={<Login setToken={setToken} />} />
             <Route path="/profile/:id" element={<Profile />} />
             <Route path="/forgotPassword" element={<ForgotPassword />} />

@@ -6,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { jwtDecode } from "jwt-decode";
 
 const Login = ({ setToken }) => {
-  const [email, setEmail] = useState("test05@gmail.com");
-  const [password, setPassword] = useState("12345");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
