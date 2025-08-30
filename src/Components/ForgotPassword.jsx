@@ -5,7 +5,7 @@ import {  toast } from "react-toastify";
 import "react-toastify/ReactToastify.css";
 
 const ForgotPassword = () => {
-  const [email, setEmail] = useState("srithar5131@gmail.com");
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
